@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: black;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+
+}
+
+.navigation login{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .button_login:hover{
+    background: white;
+    color: black;
+}
+
+
+
+
+#notelt-container {
+    width: 700px;
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 20px 20px 15px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+}
+#notelt-title {
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+#notelt-title span.do {
+    color: rgb(233, 109, 130); /* Change color of "Do" to pink */
+}
+
+#notelt-title span.note {
+    color: black; /* Change color of "Note" to pink */
+}
+
+  #notelt-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  #notelt-description {
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+
+  #button {
+    background-color:pink ;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 50px;
+    border-radius: 40px;
+    font-size: 16px;
+    align-items: center;
+
+  }
+  #registration-form {
+    width: 600px; 
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    color: black;
+}
+
+#registration-form div {
+    width: 48%; 
+}
+
+#registration-form label {
+    display: block;
+    text-align: left; /* Align label text to the right */
+    padding-bottom: 10px;
+}
+
+#registration-form input {
+    width: calc(100% - 10px); /* Adjust input width to account for padding */
+    padding: 5px;
+    text-align: left; /* Align input text to the left */
+    margin-bottom: 30px;
+    border-radius: 40px;
+    border: 2px solid;
+    color: black;
+}
